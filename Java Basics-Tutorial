@@ -1,0 +1,41 @@
+The main() method:
+
+1. The main() method is required that in every Java program.
+2. code inside the main() will be executed.
+3. every java program must have a class name that matches the file name, every java program must contain a main() method.
+
+formula:
+public class Classname {
+public static void main(String[] args) {
+//This is your program, and you should type your codes between the parenthesis//
+  }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------
+Java comments:
+
+There are two types of comments in Java, "//" for single-line comments, "/**/" for multi-line comments.
+the better preference may be using "//" for short comments and using "/**/" for long comments.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Java variables and data types:
+there are different types of variables in Java(within primitive type and non-primitive type)
+Primitive type:
+1. String--It stores text into a variable, text is stored with double quote.for example: String x = "This is a text message";
+2. int--It stores whole numbers into a variable, for example: int y = 114514;
+3. float--it stores numbers with decimal into a variable, for example float z = 114.5141919810;
+4. char--It stores a character into a variable, character is stored with single quote. for example: char z = 'e';
+5. boolean--It stores only 2 states, true or false.
+6. byte--1 byte. It stores whole numbers between -128 to 127, for example byte x = -10;
+7. short--2 bytes.
+
+  You can also declare more than one variables at the same time, as long as they are the same type of variable.
+for example: int x = 50, y = 60, z = 70
+
+Rules to construct names in variables:
+1. Names can contain letters, digits, underscores, and dollarsigns.
+2. Names MUST begin with a letter.
+3. Names should start with a lowercase letter and it CANNOT contain whitespace.
+4. Names are case sensitive.
+5. Reserved words such as java keywords cannot be used as names.(in order to prevent conflicts)
+
+---------------------------------------------------------------------------------------------------------------------------------------
