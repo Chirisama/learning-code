@@ -20,14 +20,21 @@ the better preference may be using "//" for short comments and using "/**/" for 
 Java variables and data types:
 there are different types of variables in Java(within primitive type and non-primitive type)
 Primitive type:
-1. String--It stores text into a variable, text is stored with double quote.for example: String x = "This is a text message";
-2. int--It stores whole numbers into a variable, for example: int y = 114514;
-3. float--it stores numbers with decimal into a variable, for example float z = 114.5141919810;
-4. char--It stores a character into a variable, character is stored with single quote. for example: char z = 'e';
-5. boolean--It stores only 2 states, true or false.
-6. byte--1 byte. It stores whole numbers between -128 to 127, for example byte x = -10;
-7. short--2 bytes.
 
+1. float--4 bytes. It stores numbers with decimal into a variable, surfficient for storing 6-7 decimal digits. for example float z = 114.5141919;
+2. char--2 bytes. It stores a character into a variable, character is stored with single quote. for example: char z = 'e';
+3. boolean--1 bit(1/8 bytes). It stores only 2 states, true or false.
+4. byte--1 byte. It stores whole numbers from -128 to 127, for example byte x = -10;
+5. short--2 bytes.It stores whole numbers from -32,768 to 32,767, for example short x = 23333;
+6. int--4 bytes.(mostly used one). It stores whole numbers from -2,147,483,648 to 2,147,483,647;
+7. double--8 bytes. It stores numbers with decimal into a variable, surfficient for storing 15 decimal digits.
+
+Non-primitive type:
+1. String--It stores text into a variable, text is stored with double quote.for example: String x = "This is a text message";
+/*This is an exception of all the non-primitive type that is predefined by Java*/
+2. Arrays
+3. Classes
+4. Interface //#2,3 and 4 will be completed once I know their definition and how to use them.
   You can also declare more than one variables at the same time, as long as they are the same type of variable.
 for example: int x = 50, y = 60, z = 70
 
