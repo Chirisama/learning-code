@@ -10,13 +10,13 @@ public static void main(String[] args) {
 //This is your program, and you should type your codes between the parenthesis//
   }
 }
------------------------------------------------------------------------------------------------------------------------------------------
+________________________________________________________________________________________________________________________________________
 Java comments:
 
 There are two types of comments in Java, "//" for single-line comments, "/**/" for multi-line comments.
 the better preference may be using "//" for short comments and using "/**/" for long comments.
 
-------------------------------------------------------------------------------------------------------------------------------------------
+_________________________________________________________________________________________________________________________________________
 Java variables and data types:
 there are different types of variables in Java(within primitive type and non-primitive type)
 Primitive type:
@@ -45,4 +45,87 @@ Rules to construct names in variables:
 4. Names are case sensitive.
 5. Reserved words such as java keywords cannot be used as names.(in order to prevent conflicts)
 
----------------------------------------------------------------------------------------------------------------------------------------
+_________________________________________________________________________________________________________________________________________
+Java Type Casting:
+
+Widening Casting:
+byte -> short -> char -> int -> long -> float -> double
+
+Narrowing Casting:
+double -> float -> long -> int -> char -> short -> byte
+
+Example of widening csting:
+public class Classname{
+  public static void main(String[] args){
+  int newInt = 10;
+  double newDouble = newInt; //Automatic casting, int to double
+  
+  System.out.println(newInt); //the output should be 10.
+  System.out.rintln(newDouble); //the output should be 10.0.
+ }
+}
+--------------------------------------------------------------------------------------------------------------------------------------- 
+Example of narrowing casting:
+public class Classname{
+  public static vod main(String[] args){
+  double newDouble = 20.5;
+  int newInt = (int)newDouble; //Manual casting, double to int.
+  
+  System.out.println(newDouble); //the output should be 20.5.
+  System.out.println(newInt); //the output should be 20, numbers after the decimal will be forbidden.
+  
+______________________________________________________________________________________________________________________________________
+Java Operators:
+Java assigned operators into several different types:
+1.Arithmetic Operators
+2.Assignment Operators
+3.Comperason Operators
+4.Logical Operators
+5.Bitwise Operators
+
+Arithmetic Operators:
+1. + | Addition, used for adding 2 values together, such as 3 + 4.
+2. - | Subtraction, used for subtracting one value from another, such as 3 - 4.
+3. * | Multiplication, used for multiplying 2 values, such as 3 * 4.
+4. / | Division, used for dividing one value from another, such as 3/4.
+5. % | Modulus, used for returning the devision remainder, such as 5 % 2(the output will be 1).
+6. ++ | Increment, used for increasing 1 value for a variable, such as ++x. 
+7. -- | Decrement, used for decreasing 1 value from a variable, such as --x.
+
+Assignment Operators: // I'm going to make the explanation more straight forward since there isn't much explanation in the tutorial.
+1. = , x = 5 means x = 5.
+2. +=, x += 5 means x = x + 5.
+3.-=, x -= 5 means x = x - 5.
+4. *=, x *= 5 means x = x * 5.
+5. /=, x /= 5 means x = x / 5.
+6. %=, x %= 5 means x = x % 5.
+7. &=, x &= 5 means x = x & 5.
+8. |=, x |= 5 means x = x | 5.
+9. ^=, x ^= 5 means x = x ^ 5.// the operator "^" is not an exponentiation operator!!!
+10. >>=, x >>= 5 means x = x >> 5.
+11. <<=, x <<= 5 means x = x << 5.
+/* p.s.: You don't have to memorize all of these when you read it for the first time, try to use them and applicate them later,
+feel free to come back and review some of these Operators */
+
+Comparison Operators:
+1. ==, it works as "equal to", such as A == B. //That's why you shouldn't use A = B in a comparison, "=" is for assigning an value.
+2. !=, it works as "not equal to", 2 values that are not equal will give the output as "true".
+3. >, it works as "Greater than", such as A > B.
+4. <, it works as "Less than", such as A < B.
+5. >=, it works as "Greater or equal to", such as A >= B.
+6. <=, it works as "Less or equal to", such as A <= B.
+
+Logical Operators:
+1. &&, it works as "and", it returns true if both of the statements are true.
+2. ||, it works as "or", it returns true if either one of the statement is true.
+3. !, it works as "not", it returns false if the statement is true, otherwise it returns true.
+
+___________________________________________________________________________________________________________________________________________
+
+  
+  
+  
+  
+  
+  
+  
