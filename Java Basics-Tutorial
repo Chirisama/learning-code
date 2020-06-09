@@ -7,7 +7,7 @@ The main() method:
 formula:
 public class Classname {
 public static void main(String[] args) {
-//This is your program, and you should type your codes between the parenthesis//
+//This is your program, and you should type your codes between the parenthesis.
   }
 }
 ________________________________________________________________________________________________________________________________________
@@ -121,8 +121,58 @@ Logical Operators:
 3. !, it works as "not", it returns false if the statement is true, otherwise it returns true.
 
 ___________________________________________________________________________________________________________________________________________
+Java String:
+String method can contain a collect of characters(which is a text) with double quotes surrounded.
 
-  
+  To calculate the length(the amount of characters in a text) within the String method, using variable's name.length() in the method can
+return the length of it.
+for example:
+
+String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+System.out.println("There are " + letters.length() + " letters."); //The output is: There are 26 letters.
+
+  To enforce the text within the String method to be all upper/lower case, using variable's name.toUpperCase()/toLowerCase() in the method
+can return the whole text with all upper/lower case.
+for example:
+
+String text = "ThIs Is A tExT mEsSaGe.";
+System.out.println(text.toUpperCase()); //The output should be: THIS IS A TEXT MESSAGE.
+System.out.println(text.toLowerCase()); //The output should be: this is a text message.
+
+  To find a character or a letter's position in a string, using variable's name.indexOf(" ") /* You should have what you want to find
+within the double quotes*/
+for example:
+
+String text = "KKSKKIMOSUKIYYUTYAJUSENPAI";
+System.out.println(text.indexOf("YYUT"); //the output should be 11, Java starts counting from 0 instead of 1.
+
+To combine 2 strings together, you can either use the "+" operator or using concatenation with concat() method.
+example of "+" operator method:
+String fname = "Chiri";
+String lname = "Sama";
+System.out.println(fname + " " + lname); // The output should be: Chiri Sama.
+
+example of concat() method:
+String fname = "Chiri "
+String lname = "Sama"
+System.out.println(fname.concat(lname)); // The output should be: Chiri Sama.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+  If using raw double quotes within the text, Java will be misunderstood and generate an error.
+for example:
+  String text =""There used to have someone quoted:"There used to have someone quoted:"......"""";
+  System.out.println(text); /* It will generate an error because Java cannot tell which double quote is for quoting and which double
+quote is actually for containing the text into the variable. */
+
+to avoid this problem, using backslash("\") to let Java know the following (one) quote is not for containing the text into the variable.
+for example:
+  String text="\"There used to have someone quoted:\"There used to have someone quoted:\"......\"\"\"";
+  System.out.println(text); // The output should be: "There used to have someone quoted:"There used to have someone quoted:"......""".
+ 
+backslash can work with single-quote(',\'), double-quotes(",\"), and backslash itself(\,\\);
+--------------------------------------------------------------------------------------------------------------------------------------------
+Additionally, there are 6 escape sequences in Java:
+1. \n, it stands for "new line", (to be continued) //edited on 06/08/2020.
   
   
   
