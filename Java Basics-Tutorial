@@ -172,10 +172,64 @@ for example:
 backslash can work with single-quote(',\'), double-quotes(",\"), and backslash itself(\,\\);
 --------------------------------------------------------------------------------------------------------------------------------------------
 Additionally, there are 6 escape sequences in Java:
-1. \n, it stands for "new line", (to be continued) //edited on 06/08/2020.
+1. \n, it stands for "new line", for example: System.out.println("Hello\nWorld!")
+/* The output should be: Hello
+                         World! */
+2. \r,it stands for "Carriage return", for example: System.out.println("Hello\rWorld!")
+/* The output should be: Hello
+                         World! (p.s.:I don't think it has any difference comparing to \n at least on the result they return.)*/
+3. \t, it stands for "tab", for example: System.out.println("Hello\tWorld!")// The output should be: Hello  World!
+4. \b, it stands for "Backspace", for example: System.out.println("Hello\b World!") /*The output should be: Hell World!(I don't think
+it is going to be useful) */
+5. \f, it stands for "form feed". // I don't think it is available considering it has nothing change based on the result from my compiler.
+//Yes, there is no 6th escape sequences in the tutorial :)
+-------------------------------------------------------------------------------------------------------------------------------------------
+Rules about adding numbers and strings:
+Adding numbers uses int as data types, and the result is based on the addition of 2 variables.
+int x = 10;
+int y = 20;
+  System.out.println(x + y); //The output should be 30.
   
+Adding strings uses String as data types and with double quotes(") surrounded, the result is based on the connection of 2 variables.
+String x = "114";
+String y = "514";
+  System.out.println(x + y); // The output should be 114514.
   
-  
-  
-  
-  
+___________________________________________________________________________________________________________________________________________
+
+Java Math:
+Java math is to perform mathematical tasks on numbers.
+
+Math.max(x,y): Math.max is for determining the highest value of x and y
+for example:
+Math.max(10,114514); // The output should be 114514.
+
+Math.min(x,y): Math.min is for determining the lowest value of x and y.
+for example:
+Math.min(10,1); // The output should be 1.
+
+Math.sqrt(x): Math.sqrt returns the square root of x for the result.
+for example:
+Math.sqrt(81); // The output should be 9.
+
+Math.abs(x):Math.abs returns the absolute value of x for the result.
+for example:
+Math.abs(-114514); // The output should be 114514.
+
+Math.random(): Math.random returns a random number between 0.0(inclusive) and 1.0(exclusive).
+if you want a number from 0-100, you may probably use the code below:
+int randomNum = (int)(Math.random() * 101);
+
+if you want a random number that its minimum is not 0, you may probably use the code below:
+public class MyClass {
+  public static void main(String[] args) {
+    int max = 104, min = 99; // max and min can be whatever number you like, as long as int can accept it.
+    
+    int randomNum = (int)(Math.random() * ((max - min)+1) + min); // 99 to 104.
+    System.out.println(randomNum);
+  }
+}
+________________________________________________________________________________________________________________________________________
+
+Java Boolean:
+
