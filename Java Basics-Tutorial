@@ -230,7 +230,6 @@ public class MyClass {
   }
 }
 ________________________________________________________________________________________________________________________________________
-
 Java Boolean:
 Boolean data types only take values true and false.
 for example:
@@ -244,3 +243,56 @@ A boolean expression is a Java expression that returns a boolean value: true or 
 for example:
 System.out.println(10 > 9); //The output is true since 10 is greater than 9.
 __________________________________________________________________________________________________________________________________________
+Java if...else statement:
+Java supports these statements below:
+1. Less than: a < b.
+2. Greater than: A > b.
+3. Equal to: A == B.
+4. Not equal to: A != B.
+5. Greater or equal to: A >= B.
+6. Less or equal to: A <= B. 
+
+Java also has the following condition below:
+1. if 
+2. else
+3. else if
+4. switch
+
+The syntax of if...else statement:
+if (condition){
+//this is the block of code will be executed if the condition is true
+}
+else if (condition){
+//this is the block of code will be executed if the "if" condition is false but the else if condition is true
+}
+else{
+//this is the block of code will be executed if both conditions above are false.
+}
+
+Short hand if...else statement:
+"?" requires the statement after it to check the condition, if the condition is true, the statement will be returned.
+":" does not require to check the condition, if the condition is false, the statement after it will be returned.
+for example:
+//if else statement:
+public class Classname{
+  public static void main(String []args){
+  int age = 18;
+  if (age < 18){
+  System.out.println("You do not have the access.");
+  }
+  else{
+  System.out.println("You have the access.");
+  }
+ }
+}
+}
+
+//Short hand if else statement:
+public class Classname{
+  public static void main(String []args){
+  int age = 18;
+  String accessPermission = (age < 18) ?"You do not have the access." :"You have the access";
+  System.out.println(accessPermission);
+  }
+}
+____________________________________________________________________________________________________________________________________________
