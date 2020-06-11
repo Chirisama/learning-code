@@ -232,4 +232,15 @@ public class MyClass {
 ________________________________________________________________________________________________________________________________________
 
 Java Boolean:
+Boolean data types only take values true and false.
+for example:
+boolean correctAnswer = True;
+boolean wrongAnswer = False;
+System.out.println = (correctAnswer);// The output should be True;
+System.out.println = (wrongAnswer); // The output should be False;
 
+Boolean expression:
+A boolean expression is a Java expression that returns a boolean value: true or false.
+for example:
+System.out.println(10 > 9); //The output is true since 10 is greater than 9.
+__________________________________________________________________________________________________________________________________________
