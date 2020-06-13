@@ -354,10 +354,36 @@ x++;
 while(x < 5);
 
 _____________________________________________________________________________________________________________________________________
+Java "for" loop:
+when you know exactly how many times you want to execute the loop, you can use for loop instead of while loop.
+Here is the syntax of for loop:
+for(statement 1, statement 2, statement 3){
+//code block to be executed.
+}
 
+statement 1 will be executed before the execution of the code block.
+statement 2 defines the condition for executing the code block.
+statement 3 will be executed after the code block is executed.
 
+for example:
+for( int i = 10, i < 11, i++){
+  System.out.println(i);
+  }// The output should be 10.
 
+for-each loop:
+for-each loop is exclusively being used to loop the elements in an array.
+for example:
 
+String[] gender = {"male", "female", "gay", "lesbian", "transgender", "bisexual"};
+for(String i : gender){
+System.out.println(i);
+} //The output should be: male\r female\r gay\r lesbian\r transgender\r bisexual
+
+___________________________________________________________________________________________________________________________________________
+
+Java break:
+instead of using break to jump out of switch statement, it can also be used to jump out of for loop.
+for example:
 
 
 
