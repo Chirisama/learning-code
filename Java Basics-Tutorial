@@ -472,6 +472,34 @@ public class MyClass {
 }//Outputs this is a method.
 
 ________________________________________________________________________________________________________________________________________________
+Java Method Parameters:
+Information can be passed to methods as parameter. Parameters act as variables inside the method. 
+Parameters can be added as many as you want, just to seperate them with a comma.
+for example:
+public class NewClass{
+    static void methodName(String fname,String lname){
+        System.out.println(fname + " " + lname);
+    }
+    public static void main(String[] args){
+        methodName("Vivia", "Yang");
+        methodName("Celina", "Rosen");
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+Return values:
+the void keyword indicates that this method should not have a return value. You can use a primitive data type(int, String)instead of void
+and use return keyword inside a method.
+for example:
+public class NewClass{
+    static String methodName(String fname,String lname){
+      return fname + " " + lname;
+    }
+    public static void main(String[] args){
+    System.out.println(methodName("Vivia", "Yang"));
+    System.out.println(methodName("Celina", "Rosen"));
+    }
+}
+___________________________________________________________________________________________________________________________________________________
 
 
 
