@@ -500,6 +500,14 @@ public class NewClass{
     }
 }
 ___________________________________________________________________________________________________________________________________________________
+Java method overloading:
+With method overloading, multiple methods can have same name with different parameters.
+for example:
+int newMethod(int x);
+float newMethod(float x);
+multiple methods can have a same name as long as the number or the type of parameters are different.
+
+________________________________________________________________________________________________________________________________________
 
 
 
