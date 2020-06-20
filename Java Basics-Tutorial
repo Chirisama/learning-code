@@ -508,6 +508,39 @@ float newMethod(float x);
 multiple methods can have a same name as long as the number or the type of parameters are different.
 
 ________________________________________________________________________________________________________________________________________
+Java Recrusion:
+Recursion is a technique that makes a function to call itself.
+for example, to write a program that constantly add numbers from 5 to 0 (which is 5+4+3+2+1+0):
+static void main(String[] args){
+int result = sum(0);
+System.out.println(result);
 
+public static int sum(int n){
+if (n < 6){
+return n + sum(n + 1);
+}
+else{
+return 0;
+}
+}
+}
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Halting condition:
+To prevent the infinite recrusion, there should be a halting condition that will eventually stop the recrusion.
+for example, to write a program that constantly add numbers from 1 to 10:
+public class NewClass {
+static void main(String[] args){
+  int result = sum(1,10);
+  System.out.println(result);
+  
+  public static int sum(int start,int end){
+  if (end > start){
+  return sum(end - 1);
+  else{
+  return end; //This is to prevent the infinite recrusion.
+  }
+  }
+  }
 
+________________________________________________________________________________________________________________________________________
