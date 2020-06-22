@@ -552,3 +552,128 @@ OOP provides a clear structure for the programs
 OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
 OOP makes it possible to create full reusable applications with less code and shorter development time
 _________________________________________________________________________________________________________________________________________________
+Java Class & Objects:
+Everything in Java is associated with Class and Object, along with its attributes and methods.
+
+to create a class, use the keyword class:
+public class ClassName /*This is where you put your class's name */{
+//block of code to be executed
+}
+
+To create an object, specify the class name, followed by the new object name, and use the keyword new:
+public class NewClass{
+int x = 1;
+}
+
+static void main(String[] args){
+  NewClass objName = new NewClass();
+  System.out.println(objName.x); // outputs 1
+  }
+  }
+--------------------------------------------------------------------------------------------------------------------------------------------------
+You can create multiple objects as well:
+public class NewClass{
+int x = 1;
+}
+
+static void main(String[] args){
+  NewClass objName1 = new NewClass();
+  NewClass objName2 = new NewClass();
+  System.out.println(objName1.x);// outputs 1
+  System.out.println(objName2.x);// outputs 1
+  }
+  }
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Multiple classes can be called by others:
+public class MyClass {
+  int x = 5;
+}
+class OtherClass {
+  public static void main(String[] args) {
+    MyClass myObj = new MyClass();
+    System.out.println(myObj.x); // outputs 5.
+  }
+}
+___________________________________________________________________________________________________________________________________________________________
+Java Class attribute:
+Class attribute are variables within the class.
+To access an attribute, create an object from a class, and by using the dot syntax(.)
+for example:
+public class NewClass{
+  String txt = "This is a text message.";
+  
+public static void main(String[] args){
+  NewClass newObj = new NewClass();
+  System.out.println(newObj.txt);
+  }
+  }
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+ To modify or override existing attribute, just to override it with the value you want:
+  public class NewClass{
+  int x = 114514;
+  
+  public static void main(String[] args){
+  NewClass newObj = new NewClass();
+  newObj.x = 1919810;
+  System.out.println(newObj.x); //outputs 1919810
+  }
+  }
+  if you want to forfeit the ability to override existing values, declare with the keyword final:
+   public class NewClass{
+  final int x = 114514;
+  
+  public static void main(String[] args){
+  NewClass newObj = new NewClass();
+  newObj.x = 1919810;// will generate an error:cannot assign a final value
+  System.out.println(newObj.x); //outputs 114514 if there's no error
+  }
+  }
+  ------------------------------------------------------------------------------------------------------------------------------------------------
+  You can also use multiple objects to change the attribute in one object while others keep the same:
+  public class SampleClass{
+  int y = 10;
+  
+  public static void main(String[] args){
+  SampleClass newObj1 = new SampleClass();
+  SampleClass newObj2 = new SampleClass();
+  newObj2 = 20;
+  System.out.println(newObj1);//outputs 10
+  System.out.println(newObj2);//outputs 20
+}
+}
+__________________________________________________________________________________________________________________________________________________________
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
