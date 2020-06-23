@@ -672,6 +672,27 @@ public void NewClass{
  }
  }
  ___________________________________________________________________________________________________________________________________________________
+Java Constructor:
+A constructor in Java is a special method that is used to initialize objects. The constructor is called when the object is created.
+A construtor can be used to set an initial value for object attribute.
+Example to create and call a constructor:
+public void NewClass{
+  int x; //Create a class attribute
+  
+  public NewClass(){
+  x = 5; //Set the initial value for the class attribute x
+  }
+  
+  public static void main(String[] args){
+    NewClass newObj1 = new NewClass; //Create an object for class "NewClass", this will call the constructor.
+    System.out.println(newObj1.x); //Print the value of x.
+    }
+    }
+  -----------------------------------------------------------------------------------------------------------------------------------------------------
+The constructor must match the class name, and it does not have a return type(such as void)
+All classes have constructor by default, if you don't create one, Java will create it for you, however, you will not be able to set the initial values.
+you can have as many parameters as you want.
+__________________________________________________________________________________________________________________________________________________________
 
 
 
