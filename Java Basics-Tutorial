@@ -642,7 +642,37 @@ public static void main(String[] args){
 }
 }
 __________________________________________________________________________________________________________________________________________________________
+Java Class Methods:
+methods are used to declare certain actions.
+example to create a method:
+static void newMethod(){
+//block of code to be executed
+}
+
+To call a method, refer the method's name with 2 parentheses follwed and a semicolon.
+for example:
+  newMethod();
+----------------------------------------------------------------------------------------------------------------------------------------
+Static vs. non static:
+static method can be called without creating an object, public must be called with an object created.
+For example:
+public void NewClass{
+  static void newMethod1(){
+  System.out.println("This is a static method")
+}
+  public void newMethod2(){
+  System.out.println("This is a public method")
+}
+  public static void main(String[] args){
+  newMethod1;
+  //newMethod2; will execute an error.
   
+  NewClass newObj = new NewClass;
+  newObj.newMethod2();//This is to call the public method
+ }
+ }
+ ___________________________________________________________________________________________________________________________________________________
+
 
 
 
