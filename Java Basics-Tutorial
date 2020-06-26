@@ -692,10 +692,35 @@ public void NewClass{
 The constructor must match the class name, and it does not have a return type(such as void)
 All classes have constructor by default, if you don't create one, Java will create it for you, however, you will not be able to set the initial values.
 you can have as many parameters as you want.
-__________________________________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________________________________________
+Java Modifier:
+Modifier is separated into 2 groups：
+Acess Modifier - control the access level.
+Non Acess Modifier - do not control acess modifier, but provides other functionality. 
 
+Acess Modifier:
+For classes, you can only use either public or default:
+public - The class is accessible any other classes.
+default - The class is only accessible by classes in the same package, this is used when you don't specify a modifier.
 
+For attributes, methods, and contructors, you can use one of the following:
+public - The code is accessible for all classes.
+private - The code is only accessible within the declared classes.
+default - The code is only accessible within the same package.
+protected - The code is accessible in the same package and subclasses.
 
+Non Acess Modifier:
+For classes, you can use either final or abstract:
+final - This class is not inherited by other classes.
+abstract - This class cannot be used to create objects.
+
+for attributes, methods, and constructors, you can use one of the following:
+final - attributes and methods cannot be overrriden/modified.
+static - attributes and methods belongs to the class
+abstract - Can only be used in an abstract class, and can only be used by methods. The method does not have a body, the body is provided by subclass.
+transient - Attributes and objects are skipped when serializing the object containing them.
+synchronized - Methods can only be acessed by one thread at a time.
+volatile - The value of an attribute is not cached thread-locally, and is always read from the "main-memory".
 
 
 
