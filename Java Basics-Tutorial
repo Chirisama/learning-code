@@ -721,6 +721,11 @@ abstract - Can only be used in an abstract class, and can only be used by method
 transient - Attributes and objects are skipped when serializing the object containing them.
 synchronized - Methods can only be acessed by one thread at a time.
 volatile - The value of an attribute is not cached thread-locally, and is always read from the "main-memory".
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+Java Encapsulation:
+The encapsulation is to hide sensitive data from users. To acheive this, you need to:
+1. Declare class attributes/variables as private.
+provide public get and set methods to access and update the value of a private variable.
 
 
 
