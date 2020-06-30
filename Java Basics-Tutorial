@@ -750,13 +750,45 @@ Flexible: the programmer can change one part of the code without affecting other
 Increased security of data
 _______________________________________________________________________________________________________________________________________________________________________________________
 Java Pacakages:
+A package in Java is used to group related classes. Using packages to avoid conflicts and to write a better maintainable code.
+Packages are separated into 2 categories:
+Built-in packages(packages from the Java API);
+User defined Packages(packages created by your own);
+
+Built-in packages:
+The Java API is a library of prewritten classes, that are free to use, included in the Java Development Environment.
+The library contains components for managing input, database programming, and much much more.
+The complete list can be found at Oracles website: https://docs.oracle.com/javase/8/docs/api/.
+The library is divided into packages and classes. Meaning you can either import a single class (along with its methods and attributes), 
+or a whole package that contain all the classes that belong to the specified package.
+
+To use a class or a package from the library, you need to use the import keyword:
+
+import package.name.Class;  //import a single class.
+import package.name.*; //import the whole package.
+
+Import a class:
+if you find a class you want to use, for example, the Scanner class, which is used to get user input, write the following code:
+import java.util.Scanner;
+
+To use the Scanner to get the user's input, you can refer code below:
+import java.util.Scanner;
+
+  class NewClass {
+  public static void main(String[] args){
+  Scanner obj1 = new Scanner;
+  int age;
+  
+  System.out.println("Please enter your age.");
+  age = obj.nextline;
+  
+  System.out.prinln("Your age is " + age + " .");
+  }
+}
 
 
-
-
-
-
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+User-defined packages:
 
 
 
