@@ -798,10 +798,37 @@ public static void main(String[] args){
   }
 
 _______________________________________________________________________________________________________________________________________________________________________________________________
+Java Inheritance:
+In Java, it is possible to inherit attribute and methods from one class to another. We group the "inheritance concept" into 2 categories:
+1. subclass(child) - the class that inherits from another class.
+2. superclass(parent) - the class being inherited from.
 
+To inherit from a class, use the extends keyword.
+ 
+for example:
+class Fname{
+protected String fName = "first name"; // if set this veriable into private, Lname cannot access it.
 
+public void argue(){
+System.out.println("Don't be surprise, this is my name:");
+  }
+}
+class Lname extends Fname {
+private String lName = "last name";
+  public static void main(String[] args){
+    Lname fullname = new Lname;
+    fullname.argue(); // outputs Don't be surprise, this is my name:
+    System.out.println(fullname.fName + " " + lName); // outputs first name last name
+    }
+  }
 
+Additionally, if you don't want a class to be inherited by other classes, you can add the final keyword,
+for example:
+final class NewClass(
+// block of code to be executed.
+}
 
+____________________________________________________________________________________________________________________________________________________________________________________________
 
 
 
